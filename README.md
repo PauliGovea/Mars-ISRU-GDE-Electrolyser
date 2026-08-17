@@ -79,5 +79,5 @@ pip install numpy pandas matplotlib seaborn
 ## 🔗 Data Citation
 
 The complete, immutable raw dataset and analytical logs are permanent-archived on Zenodo:
-> **Citation:** *[Paulina Govea-Alvarezab, Jia Songb, Zhiyuan Chen, Deepak Pant, Kevin M. Van Geem, Yi Ouyang]. (2026). Electrochemical CO2 reduction to CO towards Mars ISRU. Zenodo.  DOI 10.5281/zenodo.21945042*
+> **Citation:** *[Paulina Govea-Alvarez, Jia Songb, Zhiyuan Chen, Deepak Pant, Kevin M. Van Geem, Yi Ouyang]. (2026). Electrochemical CO2 reduction to CO towards Mars ISRU. Zenodo.  DOI 10.5281/zenodo.21945042*
 
