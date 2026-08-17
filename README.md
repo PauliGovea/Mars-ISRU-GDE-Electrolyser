@@ -34,18 +34,23 @@ All uncorrected raw values and full comparative distributions across the 18 expe
 
 ## 📁 Repository Structure
 
-```text
 ├── data/
-│   ├── raw/                 # Unprocessed chromatographic peak areas and GC logs
-│   └── processed/           # Curated data used for figures (filtered low-current artifacts)
-├── scripts/
-│   ├── data_analysis.py     # Python script calculating Faradaic and Energy efficiencies
-│   └── plot_generation.py   # Code for creating the publication-ready figures
-├── supplementary/
-│   └── Table_S5_offsets.csv # Delivered currents, nominal set-points, and mA deviations
+│   ├── raw/                      # instrument exports, unmodified
+│   │   ├── gc data/              # GC peak areas and concentrations (CompactGC, Agilent 990)
+│   │   ├── power_supply/         # EA Power Control logs: delivered current and cell voltage
+│   │   └── flow/                 # BPC Go flow meter exports, cathode and anode
+│   └── processed/                # per-step summaries written by the notebooks
+├── notebooks/
+│   ├── Na2SO4/                   # one notebook per condition, 0.3-0.9 M, pH 1-3  (2 h steps)
+│   ├── K2SO4/                    # one notebook per condition, 0.3-0.9 M, pH 1-3  (2 h steps)
+│   ├── All K2SO4 and Na2SO4 merged and best condition/      # combines the per-condition summaries, Figs 3 and 4; 0.6 M K2SO4 pH 3: mass, energy, MOXIE comparison
+│   ├── All Na2SO4/               #All Na2SO4 merged
+│   └── anode_O2/                 # anode gas composition and FE(O2)  (2026, 20 min steps)
+├── figures/                      # figures as published, with the code that makes them
+├── tables/                       # Tables S1-S5 as CSV. In All K2SO4 merged
+├── requirements.txt              # package versions used
 ├── LICENSE
 └── README.md
-```
 
 ---
 
